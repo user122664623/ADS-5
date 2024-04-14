@@ -6,7 +6,7 @@ template<typename T, int size>
 class TStack {
  private:
   int currentFreePosition = 0;
-  T data[size];
+  T* data = new T[size];
 
  public:
   void push(T element) {
